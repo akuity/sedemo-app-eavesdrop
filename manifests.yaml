@@ -110,13 +110,13 @@ spec:
         app: "sedemo-app-eavesdrop-app"
     spec:
       containers:
-        - image: "ghcr.io/akuity/sedemo-app-eavesdrop:2"
+        - image: "ghcr.io/akuity/sedemo-app-eavesdrop:1"
           name: "sedemo-app-eavesdrop-app"
           ports:
             - containerPort: 80
           env:
             - name: SEMVER
-              value: "2"
+              value: "1"
             - name: STAGE
               value: staging
             - name: NAMESPACE
