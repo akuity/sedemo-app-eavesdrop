@@ -1,9 +1,8 @@
 project:
-  group: <name of AD group>
-
+  group: sedemo-team-webinar
 image:
   # If using default workflow, this will be set to ghcr.io/<github_org>/<repo_name>
-  repository: registry/imagename
+  repository: ghcr.io/akuity/sedemo-app-eavesdrop
   # Default use of this ghcr publishing workflow will use incrmental build number as tag
   selectionStrategy: Lexical
   # if useing digest stragey, uncomment next line and comment tagRegex line
@@ -13,7 +12,7 @@ image:
   memoryLimit: 64Mi
   cpuLimit: 1m
 ingress:
-  custom_prefix: changeme
+  custom_prefix: eavesdrop
 
 rollouts:
   enabled: true
